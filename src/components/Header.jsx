@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="">
       <div className="bg-[var(--color-2-black)]">
-        <div className="hidden max-w-[1920px] custom-scroll overflow-x-auto gap-6 overflow-y-hidden w-[90%] m-auto items-center justify-between h-[45px] px-6 py-2 md:flex">
+        <div className="hidden max-w-[1555px] custom-scroll overflow-x-auto gap-6 overflow-y-hidden w-[90%] m-auto items-center justify-between h-[45px] px-6 py-2 md:flex">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2 whitespace-nowrap">
               <svg
@@ -102,9 +102,9 @@ const Header = () => {
         </div>
       </div>
       <div className="bg-[var(--color-3-white)]">
-        <div className="md:flex hidden max-w-[1920px] w-[90%] m-auto items-center gap-2  justify-center 3xl:justify-between flex-col px-6 py-4 flex-wrap md:flex-row ">
+        <div className="md:flex hidden max-w-[1555px] flex-wrap w-[90%] m-auto items-center gap-2 justify-center 3xl:justify-between flex-col px-6 py-4  md:flex-row ">
           <div className="hidden md:flex flex-col items-center gap-4 ">
-            <div className="flex  gap-2">
+            <div className="flex gap-2">
               <div className="w-[34px] h-8 rounded-[9px] bg-[var(--color-oragne)]"></div>
               <div className="w-[34px] h-8 rounded-[9px] bg-[var(--color-2-black)]"></div>
               <div className="w-[34px] h-8 rounded-[9px] bg-[var(--color-1-orange)]"></div>
@@ -116,7 +116,7 @@ const Header = () => {
             </div>
           </div>
           <div className="md:flex flex-col items-center hidden">
-            <div className="flex gap-12 ">
+            <div className="flex gap-5 ">
               <div className="flex items-center gap-2">
                 <svg
                   width="10"
@@ -190,7 +190,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Поиск по каталогу..."
-                className="flex-auto min-w-[758px] font-light  text-sm h-[45px] text-[#818181] font-family px-3 py-2 border border-[color:var(--subcolor-1-gray)] rounded-md border-solid focus:outline-none focus:ring-2 focus:ring-[#ff7a1b]"
+                className="flex-auto min-w-[650px] font-light  text-sm h-[45px] text-[#818181] font-family px-3 py-2 border border-[color:var(--subcolor-1-gray)] rounded-md border-solid focus:outline-none focus:ring-2 focus:ring-[#ff7a1b]"
               />
               <button className="absolute right-0">
                 <svg
@@ -320,8 +320,8 @@ const Header = () => {
         </div>
       </div>
       <div className="bg-[var(--white-ffffff)]">
-        <div className="md:flex hidden items-center overflow-x-auto whitespace-nowrap gap-5 p-[0px_80px_0px_24px] justify-between max-w-[1920px] w-[90%] m-auto">
-          <div className="flex items-center p-4 gap-5 bg-[var(--color-1-orange)] w-[268px] h-[50px]">
+        <div className="md:flex hidden items-center  overflow-x-auto whitespace-nowrap gap-5 p-[0px_80px_0px_24px] justify-between max-w-[1555px] w-[90%] m-auto">
+          <div className="flex items-center p-4 gap-5  bg-[var(--color-1-orange)] w-[268px] h-[50px]">
             <svg
               width="24"
               height="24"
@@ -427,8 +427,6 @@ const Header = () => {
             />
           </svg>
         </div>
-
-        {/* Мобильное меню */}
         {isMenuOpen && (
           <div className="md:hidden bg-[var(--color-2-black)] w-full max-w-[768px] mx-auto">
             <nav className="flex flex-col p-4 gap-4">
